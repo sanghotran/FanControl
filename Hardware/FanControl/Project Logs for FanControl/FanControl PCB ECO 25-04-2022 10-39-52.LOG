@@ -1,0 +1,72 @@
+Added Component: Designator=B1(BlUEPILL)
+Added Component: Designator=C1(CAP-SM-0805)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAP-SM-0805)
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=M1(HC-05-06-TH)
+Add component (AddParameter): Name = "Local Supplier"; Value = "thegioiic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Local Supplier Link"; Value = "https://www.thegioiic.com/products/hc-05-thu-phat-bluetooth-ra-chan-master-slave"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Local Supplier Part Numer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P1(terminal 2p 5mm)
+Added Component: Designator=R1(RES-SM-0603)
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=S1(SW2)
+Added Component: Designator=U1(74HC245N)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "74HC245N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "NXP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=VR1(W16X2_503)
+Added Pin To Net: NetName=3V3 Pin=B1-18
+Added Pin To Net: NetName=3V3 Pin=B1-40
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=R1-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-20
+Added Pin To Net: NetName=3V3 Pin=VR1-1
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=B1-38
+Added Pin To Net: NetName=5V Pin=M1-5
+Added Net: Name=5V
+Added Pin To Net: NetName=ADC Pin=B1-7
+Added Pin To Net: NetName=ADC Pin=VR1-2
+Added Net: Name=ADC
+Added Pin To Net: NetName=BUTTON Pin=B1-6
+Added Pin To Net: NetName=BUTTON Pin=C1-2
+Added Pin To Net: NetName=BUTTON Pin=R1-1
+Added Pin To Net: NetName=BUTTON Pin=S1-2
+Added Net: Name=BUTTON
+Added Pin To Net: NetName=DIR Pin=B1-28
+Added Pin To Net: NetName=DIR Pin=U1-3
+Added Net: Name=DIR
+Added Pin To Net: NetName=GND Pin=B1-19
+Added Pin To Net: NetName=GND Pin=B1-20
+Added Pin To Net: NetName=GND Pin=B1-39
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=M1-4
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=U1-10
+Added Pin To Net: NetName=GND Pin=U1-19
+Added Pin To Net: NetName=GND Pin=VR1-3
+Added Net: Name=GND
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=U1-18
+Added Net: Name=NetP1_1
+Added Pin To Net: NetName=NetP1_2 Pin=P1-2
+Added Pin To Net: NetName=NetP1_2 Pin=U1-17
+Added Net: Name=NetP1_2
+Added Pin To Net: NetName=PWM Pin=B1-30
+Added Pin To Net: NetName=PWM Pin=U1-2
+Added Net: Name=PWM
+Added Pin To Net: NetName=RX_BLU Pin=B1-26
+Added Pin To Net: NetName=RX_BLU Pin=M1-3
+Added Net: Name=RX_BLU
+Added Pin To Net: NetName=TX_BLU Pin=B1-27
+Added Pin To Net: NetName=TX_BLU Pin=M1-2
+Added Net: Name=TX_BLU
+Added Class: Name=FanControl
+Added Room: Name=FanControl
