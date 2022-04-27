@@ -1258,7 +1258,7 @@ Image Symbol Table
     i.MX_GPIO_Init                           0x0800201c   Section        0  main.o(i.MX_GPIO_Init)
     MX_GPIO_Init                             0x0800201d   Thumb Code   120  main.o(i.MX_GPIO_Init)
     i.MX_TIM2_Init                           0x080020a0   Section        0  main.o(i.MX_TIM2_Init)
-    MX_TIM2_Init                             0x080020a1   Thumb Code   148  main.o(i.MX_TIM2_Init)
+    MX_TIM2_Init                             0x080020a1   Thumb Code   150  main.o(i.MX_TIM2_Init)
     i.MemManage_Handler                      0x0800213c   Section        0  stm32f1xx_it.o(i.MemManage_Handler)
     i.NMI_Handler                            0x0800213e   Section        0  stm32f1xx_it.o(i.NMI_Handler)
     i.PendSV_Handler                         0x08002140   Section        0  stm32f1xx_it.o(i.PendSV_Handler)
@@ -1786,7 +1786,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       908         96          0         16        208     452436   main.o
+       908         94          0         16        208     452436   main.o
         64         26        236          0       1536        800   startup_stm32f103xb.o
        128         24          0         12          0       5229   stm32f1xx_hal.o
       1188         44          0          0          0       6651   stm32f1xx_hal_adc.o
@@ -1804,7 +1804,7 @@ Image component sizes
          2          0         24          4          0       1083   system_stm32f1xx.o
 
     ----------------------------------------------------------------------
-      7844        500        292         36       1744     538206   Object Totals
+      7844        498        292         36       1744     538206   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0          2          0          0   (incl. Padding)
 
@@ -1865,9 +1865,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9848        556        564         36       1844     534858   Grand Totals
-      9848        556        564         36       1844     534858   ELF Image Totals
-      9848        556        564         36          0          0   ROM Totals
+      9848        554        564         36       1844     534858   Grand Totals
+      9848        554        564         36       1844     534858   ELF Image Totals
+      9848        554        564         36          0          0   ROM Totals
 
 ==============================================================================
 
