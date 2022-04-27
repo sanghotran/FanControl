@@ -1,0 +1,11 @@
+E:\Project\FanControl\Software\FanControl\bin\Debug\FanControl.exe.config
+E:\Project\FanControl\Software\FanControl\bin\Debug\FanControl.exe
+E:\Project\FanControl\Software\FanControl\bin\Debug\FanControl.pdb
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.csproj.AssemblyReference.cache
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.csproj.SuggestedBindingRedirects.cache
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.Form1.resources
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.Properties.Resources.resources
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.csproj.GenerateResource.cache
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.csproj.CoreCompileInputs.cache
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.exe
+E:\Project\FanControl\Software\FanControl\obj\Debug\FanControl.pdb

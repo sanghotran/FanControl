@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "104c69d1-0728-4dd9-aab6-83d7eb6f1baf": {
+      "ProjectGuid": "104c69d1-0728-4dd9-aab6-83d7eb6f1baf",
+      "DisplayName": "FanControl",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

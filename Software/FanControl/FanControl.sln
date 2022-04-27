@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanControl", "FanControl.csproj", "{104C69D1-0728-4DD9-AAB6-83D7EB6F1BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{104C69D1-0728-4DD9-AAB6-83D7EB6F1BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104C69D1-0728-4DD9-AAB6-83D7EB6F1BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104C69D1-0728-4DD9-AAB6-83D7EB6F1BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104C69D1-0728-4DD9-AAB6-83D7EB6F1BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBB4648F-6104-463F-A215-3FF41741A7C7}
+	EndGlobalSection
+EndGlobal
