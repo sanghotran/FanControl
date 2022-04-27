@@ -77,10 +77,10 @@ void process_RxData()
 {
 	if(RxBuff[0] == '0')
 	{
-		if( mode == 1)
+		if( mode == 0)
+			mode = 1;					
+		else 
 			mode = 0;
-		else
-			mode = 1;
 	}
 	if(RxBuff[0] == '1')
 	{
@@ -102,16 +102,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   UNUSED(GPIO_Pin);
 	if( GPIO_Pin == GPIO_PIN_1)
 	{
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_11);
-		if( mode == 0) 
-			mode = 1;
+		if( mode == 0)
+			mode = 1;					
 		else 
 			mode = 0;
 		flagProcess = 1;
 	}
 }
 
-void HAL_ADC_ConvCptlCallback(ADC_HandleTypeDef *hadc)
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
 	UNUSED(hadc);
 	if( hadc->Instance == ADC1)
@@ -191,12 +190,13 @@ int main(void)
 		switch( mode)
 			{
 				case 0:
-					__HAL_TIM_SetCompare(&htim2, PWM_FAN_Pin, duty);
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 0);
+					__HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1, duty);
 					flagProcess = 0;
 					break;
 				case 1:
-					duty = -duty;
-					__HAL_TIM_SetCompare(&htim2, PWM_FAN_Pin, duty);
+					HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, 1);
+					__HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1,999 - duty);
 					flagProcess = 0;
 					break;
 			}
@@ -318,7 +318,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 0;
+  htim2.Init.Prescaler = 72000;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

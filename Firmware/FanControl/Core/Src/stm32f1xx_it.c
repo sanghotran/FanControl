@@ -41,7 +41,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t GetADCCounter = 50;
+uint16_t GetADCCounter = 50;
 
 /* USER CODE END PV */
 
