@@ -74,9 +74,7 @@ namespace FanControl
             {
                 btn_EnablePWM.Text = "Disable PWM";
                 btn_EnablePWM.ForeColor = Color.Red;
-                btn_SetPWM.Enabled = true;
-                txbuff = "1 \n";
-                COM.Write(txbuff);
+                btn_SetPWM.Enabled = true;               
             }
             else if (btn_EnablePWM.Text == "Disable PWM")
             {
@@ -84,7 +82,9 @@ namespace FanControl
                 btn_Connect.ForeColor = Color.Lime;
                 btn_SetPWM.Enabled = false;
             }
-            
+            txbuff = "1 \n";
+            COM.Write(txbuff);
+
         }
 
         private void btn_SetPWM_Click(object sender, EventArgs e)

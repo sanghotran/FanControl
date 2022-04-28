@@ -1297,13 +1297,13 @@ Image Symbol Table
     __NVIC_SetPriority                       0x08002613   Thumb Code    32  stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority)
     i.main                                   0x08002634   Section        0  main.o(i.main)
     i.process_RxData                         0x080026dc   Section        0  main.o(i.process_RxData)
-    locale$$code                             0x08002738   Section       44  lc_ctype_c.o(locale$$code)
-    .constdata                               0x08002764   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08002774   Section        8  system_stm32f1xx.o(.constdata)
-    locale$$data                             0x0800279c   Section      272  lc_ctype_c.o(locale$$data)
-    __lcctype_c_name                         0x080027a0   Data           2  lc_ctype_c.o(locale$$data)
-    __lcctype_c_start                        0x080027a8   Data           0  lc_ctype_c.o(locale$$data)
-    __lcctype_c_end                          0x080028ac   Data           0  lc_ctype_c.o(locale$$data)
+    locale$$code                             0x08002730   Section       44  lc_ctype_c.o(locale$$code)
+    .constdata                               0x0800275c   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x0800276c   Section        8  system_stm32f1xx.o(.constdata)
+    locale$$data                             0x08002794   Section      272  lc_ctype_c.o(locale$$data)
+    __lcctype_c_name                         0x08002798   Data           2  lc_ctype_c.o(locale$$data)
+    __lcctype_c_start                        0x080027a0   Data           0  lc_ctype_c.o(locale$$data)
+    __lcctype_c_end                          0x080028a4   Data           0  lc_ctype_c.o(locale$$data)
     .data                                    0x20000000   Section       16  main.o(.data)
     .data                                    0x20000010   Section        2  stm32f1xx_it.o(.data)
     .data                                    0x20000014   Section       12  stm32f1xx_hal.o(.data)
@@ -1545,13 +1545,13 @@ Image Symbol Table
     USART1_IRQHandler                        0x08002605   Thumb Code     6  stm32f1xx_it.o(i.USART1_IRQHandler)
     UsageFault_Handler                       0x08002611   Thumb Code     2  stm32f1xx_it.o(i.UsageFault_Handler)
     main                                     0x08002635   Thumb Code   150  main.o(i.main)
-    process_RxData                           0x080026dd   Thumb Code    74  main.o(i.process_RxData)
-    _get_lc_ctype                            0x08002739   Thumb Code    44  lc_ctype_c.o(locale$$code)
-    AHBPrescTable                            0x08002764   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08002774   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x0800277c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800279c   Number         0  anon$$obj.o(Region$$Table)
-    __ctype                                  0x080027a9   Data           0  lc_ctype_c.o(locale$$data)
+    process_RxData                           0x080026dd   Thumb Code    68  main.o(i.process_RxData)
+    _get_lc_ctype                            0x08002731   Thumb Code    44  lc_ctype_c.o(locale$$code)
+    AHBPrescTable                            0x0800275c   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x0800276c   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08002774   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002794   Number         0  anon$$obj.o(Region$$Table)
+    __ctype                                  0x080027a1   Data           0  lc_ctype_c.o(locale$$data)
     mode                                     0x20000000   Data           1  main.o(.data)
     RxIndex                                  0x20000001   Data           1  main.o(.data)
     flagProcess                              0x20000002   Data           1  main.o(.data)
@@ -1580,9 +1580,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000028d0, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000028c8, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000028ac, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000028a4, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1755,26 +1755,26 @@ Memory Map of the image
     0x08002612   0x08002612   0x00000020   Code   RO         1156    i.__NVIC_SetPriority  stm32f1xx_hal_cortex.o
     0x08002632   0x08002632   0x00000002   PAD
     0x08002634   0x08002634   0x000000a8   Code   RO           21    i.main              main.o
-    0x080026dc   0x080026dc   0x0000005c   Code   RO           22    i.process_RxData    main.o
-    0x08002738   0x08002738   0x0000002c   Code   RO         3071    locale$$code        c_w.l(lc_ctype_c.o)
-    0x08002764   0x08002764   0x00000010   Data   RO         2975    .constdata          system_stm32f1xx.o
-    0x08002774   0x08002774   0x00000008   Data   RO         2976    .constdata          system_stm32f1xx.o
-    0x0800277c   0x0800277c   0x00000020   Data   RO         3197    Region$$Table       anon$$obj.o
-    0x0800279c   0x0800279c   0x00000110   Data   RO         3070    locale$$data        c_w.l(lc_ctype_c.o)
+    0x080026dc   0x080026dc   0x00000054   Code   RO           22    i.process_RxData    main.o
+    0x08002730   0x08002730   0x0000002c   Code   RO         3071    locale$$code        c_w.l(lc_ctype_c.o)
+    0x0800275c   0x0800275c   0x00000010   Data   RO         2975    .constdata          system_stm32f1xx.o
+    0x0800276c   0x0800276c   0x00000008   Data   RO         2976    .constdata          system_stm32f1xx.o
+    0x08002774   0x08002774   0x00000020   Data   RO         3197    Region$$Table       anon$$obj.o
+    0x08002794   0x08002794   0x00000110   Data   RO         3070    locale$$data        c_w.l(lc_ctype_c.o)
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080028ac, Size: 0x00000758, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080028a4, Size: 0x00000758, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080028ac   0x00000010   Data   RW           24    .data               main.o
-    0x20000010   0x080028bc   0x00000002   Data   RW          205    .data               stm32f1xx_it.o
-    0x20000012   0x080028be   0x00000002   PAD
-    0x20000014   0x080028c0   0x0000000c   Data   RW          693    .data               stm32f1xx_hal.o
-    0x20000020   0x080028cc   0x00000004   Data   RW         2977    .data               system_stm32f1xx.o
+    0x20000000   0x080028a4   0x00000010   Data   RW           24    .data               main.o
+    0x20000010   0x080028b4   0x00000002   Data   RW          205    .data               stm32f1xx_it.o
+    0x20000012   0x080028b6   0x00000002   PAD
+    0x20000014   0x080028b8   0x0000000c   Data   RW          693    .data               stm32f1xx_hal.o
+    0x20000020   0x080028c4   0x00000004   Data   RW         2977    .data               system_stm32f1xx.o
     0x20000024        -       0x000000d0   Zero   RW           23    .bss                main.o
     0x200000f4        -       0x00000060   Zero   RW         3061    .bss                c_w.l(libspace.o)
-    0x20000154   0x080028d0   0x00000004   PAD
+    0x20000154   0x080028c8   0x00000004   PAD
     0x20000158        -       0x00000200   Zero   RW            2    HEAP                startup_stm32f103xb.o
     0x20000358        -       0x00000400   Zero   RW            1    STACK               startup_stm32f103xb.o
 
@@ -1786,7 +1786,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       908         94          0         16        208     452436   main.o
+       900         92          0         16        208     452432   main.o
         64         26        236          0       1536        800   startup_stm32f103xb.o
        128         24          0         12          0       5229   stm32f1xx_hal.o
       1188         44          0          0          0       6651   stm32f1xx_hal_adc.o
@@ -1804,7 +1804,7 @@ Image component sizes
          2          0         24          4          0       1083   system_stm32f1xx.o
 
     ----------------------------------------------------------------------
-      7844        498        292         36       1744     538206   Object Totals
+      7836        496        292         36       1744     538202   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0          2          0          0   (incl. Padding)
 
@@ -1865,15 +1865,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9848        554        564         36       1844     534858   Grand Totals
-      9848        554        564         36       1844     534858   ELF Image Totals
-      9848        554        564         36          0          0   ROM Totals
+      9840        552        564         36       1844     534854   Grand Totals
+      9840        552        564         36       1844     534854   ELF Image Totals
+      9840        552        564         36          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                10412 (  10.17kB)
+    Total RO  Size (Code + RO Data)                10404 (  10.16kB)
     Total RW  Size (RW Data + ZI Data)              1880 (   1.84kB)
-    Total ROM Size (Code + RO Data + RW Data)      10448 (  10.20kB)
+    Total ROM Size (Code + RO Data + RW Data)      10440 (  10.20kB)
 
 ==============================================================================
 

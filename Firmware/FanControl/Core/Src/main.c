@@ -92,7 +92,7 @@ void process_RxData()
 	if(RxBuff[0] == '2')
 	{
 		sscanf(RxBuff, "%u %u", &Temp, &duty);	
-		duty = duty - 1;
+		//duty = duty - 1;
 	}
 	flagProcess = 1;
 }
